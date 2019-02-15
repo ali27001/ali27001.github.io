@@ -11,6 +11,7 @@
     <title>Ali Bulut</title>
 </head>
 <body>
+<div id="app">
 <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
     <a class="navbar-brand" href="#">Ali Bulut</a>
@@ -21,6 +22,12 @@
         <ul class="navbar-nav">
             <li class="nav-item active">
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"  @click="goToTr()" >Tr <span class="sr-only">(current)</span><img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/1200px-Flag_of_Turkey.svg.png"></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" @click="goToEn()">En <span class="sr-only">(current)</span><img class="flag" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1280px-Flag_of_the_United_Kingdom.svg.png"></a>
             </li>
         </ul>
     </div>
@@ -34,42 +41,42 @@
             <img src="https://media.licdn.com/dms/image/C5603AQFHKbbQPW8bGA/profile-displayphoto-shrink_200_200/0?e=1554940800&v=beta&t=zenTTDWg-vCjKdiwQJyjKT21f3PzYqva7_lf68VrnFI" class="rounded-circle profile-img" alt="Cinque Terre">
        </div>
        <div class="col-md-6 col-6">
-           <h4> Merhaba Ben Ali</h4>
-           <p>Junior Frontend Developer</p>  Git, Sass, Boostrap , Html, Css , Javascirpt, Jquery , Biraz Vue js
-          <br> <i>Javascirpt tarafında yeniyim ve bu alanda ilerlemek istiyorum</i>
+           <h4> {{lang.hi}}</h4>
+           <p>Junior Frontend Developer</p>  {{lang.myInfo}}
+          <br> <i>{{lang.myInfo1}}</i>
 
        </div>
    </div>
     <div  class="row">
         <div class="container">
-            <p>Projeler web ve mobil</p>
+            <p> {{lang.project}}</p>
             <ul>
                 <li>
-                    <a href="http://derinkod.com/" target="_blank">Derin Kod</a> Arkadaşlar ile kurduğumuz Yazılım Alanında Türkçe Kaynağa destek bloğumuz
+                    <a href="http://derinkod.com/" target="_blank">Derin Kod</a> {{lang.derinkod}}
                 </li>
                 <li>
-                    <a href="https://github.com/ali27001/Avenue-Fashion-Website" target="_blank">Avenue Fashion</a> psd to html css deneme amaçlı
+                    <a href="https://github.com/ali27001/Avenue-Fashion-Website" target="_blank">Avenue Fashion</a> {{lang.avenue}}
                 </li>
                 <li>
-                    <a href="https://play.google.com/store/apps/details?id=com.empati.psikiyatrist" target="_blank">Psikiyatrist Mobil Hibrit Uygulama</a> mobil uygulama - İş
+                    <a href="https://play.google.com/store/apps/details?id=com.empati.psikiyatrist" target="_blank">Psikiyatrist Mobil Hibrit Uygulama</a> {{lang.psikiyatrist}}
                 </li>
                 <li>
-                    <a href="http://imomomega.com/" target="_blank">İmomomega Website</a> psd to html css - İş
+                    <a href="http://imomomega.com/" target="_blank">İmomomega Website</a> {{lang.imomomega}}
                 </li>
                 <li>
-                    <a href="https://play.google.com/store/apps/details?id=com.filmovie.mobile" target="_blank">Filmovie - Film Takip Uygulaması</a> Vue js öğrenmek için yaptığım kendi projem.Phonon framework kullandım.
+                    <a href="https://play.google.com/store/apps/details?id=com.filmovie.mobile" target="_blank">Filmovie - Film Takip Uygulaması</a> {{lang.filmovie}}
                 </li>
                 <li>
-                    <a href="https://play.google.com/store/apps/details?id=teknolojimuhendisi.tarifler.kek" target="_blank">Yemek Tarifleri Uygulaması</a> Arkadaşlarla geliştirdiğimiz bir proje
+                    <a href="https://play.google.com/store/apps/details?id=teknolojimuhendisi.tarifler.kek" target="_blank">Yemek Tarifleri Uygulaması</a> {{lang.yemek}}
                 </li>
                 <li>
-                    <a href="https://play.google.com/store/apps/details?id=com.TeknolojiMuhendisi" target="_blank">Renk Oyunu Uygulaması</a> Arkadaşlarla geliştirdiğimiz bir proje
+                    <a href="https://play.google.com/store/apps/details?id=com.TeknolojiMuhendisi" target="_blank">Renk Oyunu Uygulaması</a> {{lang.renkoyunu}}
                 </li>
                 <li>
-                    <a href="https://github.com/ali27001/mogo-website" target="_blank">Mogo Website </a> psd to html,css pratik yapmak amaçı yaptığım proje -Github
+                    <a href="https://github.com/ali27001/mogo-website" target="_blank">Mogo Website </a> {{lang.mogo}}
                 </li>
                 <li>
-                    <a href="https://codepen.io/alibulut/pen/qxbWoY" target="_blank">Güzel Sözler Web Uygulaması </a>Javascript öğrenmek amaçlı yaptığım basit bir uygulama. Api'den güzel sözleri alıp random olarak listeliyor.tweet atabilme ve başka söz gösterme seçeneklerine sahip.
+                    <a href="https://codepen.io/alibulut/pen/qxbWoY" target="_blank">Güzel Sözler Web Uygulaması </a> {{lang.guzelsozler}}
                 </li>
 
             </ul>
@@ -77,13 +84,14 @@
         </div>
     </div>
 </div>
-
+</div>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </body>
 </html>
 
@@ -92,6 +100,7 @@
     body{
         background-color:#f4f0f1;
         font-family: 'Didact Gothic', sans-serif;
+        font-size: 18px;
     }
     .navbar{
         border-bottom: 1px solid #e8dddd;
@@ -106,5 +115,77 @@
     .profile-img{
         width: 75%;
     }
+    .flag{
+        width: 25px;
+    }
 
 </style>
+
+<script>
+
+    var app = new Vue({
+        el: '#app',
+        data: {
+            message: 'Hello Vue!',
+            tr: {
+                'hi': 'Merhaba Ben Ali',
+                'myInfo': 'Git, Sass, Boostrap , Html, Css , Javascirpt, Jquery , Biraz Vue js ',
+                'myInfo1': 'Javascirpt tarafında yeniyim ve bu alanda ilerlemek istiyorum',
+                'project': 'Projeler web ve mobil',
+                'derinkod': 'Arkadaşlar ile kurduğumuz Yazılım Alanında Türkçe Kaynağa destek bloğumuz',
+                'avenue': 'psd to html css deneme amaçlı',
+                'psikiyatrist': 'mobil uygulama - İş',
+                'imomomega': 'psd to html css - İş',
+                'filmovie': 'Vue js öğrenmek için yaptığım kendi projem.Phonon framework kullandım.',
+                'yemek': 'Arkadaşlarla geliştirdiğimiz bir proje',
+                'renkoyunu': ' Arkadaşlarla geliştirdiğimiz bir proje',
+                'mogo': 'psd to html,css pratik yapmak amaçı yaptığım proje -Github',
+                'guzelsozler': 'Javascript öğrenmek amaçlı yaptığım basit bir uygulama. Api\'den güzel sözleri alıp random olarak listeliyor.tweet atabilme ve başka söz gösterme seçeneklerine sahip.',
+            },
+            en: {
+                'hi': 'Hi I\'m Ali',
+                'myInfo': 'Git, Sass, Boostrap , Html, Css , Javascirpt, Jquery , Some Vue js ',
+                'myInfo1': 'I am new to Javascript and I want to advance in this field',
+                'derinkod': 'We established with friends, Turkish software blog',
+                'project': 'Projects web and mobile',
+                'avenue': 'psd to html css, trial purpose',
+                'psikiyatrist': 'mobile application - Business',
+                'imomomega': 'psd to html css - Business',
+                'filmovie': 'My own project to learn vue js. I used the Phonon framework',
+                'yemek': 'A project we developed with friends',
+                'renkoyunu': ' A project we developed with friends',
+                'mogo': 'psd to html,css project I did to practice -Github',
+                'guzelsozler': 'Javascript is a simple application I made to learn. Api\'dan beautiful words to take as a list of random and other options.',
+            },
+            lang:[],
+        },
+
+
+        methods: {
+
+            getLang: function getLang() {
+                var userLang = navigator.language || navigator.userLanguage;
+                if (userLang == "tr"){
+                 //   alert("türkçe")
+                    this.lang = this.tr; //tr
+                }
+                else {
+                   // alert ("ingilizce")
+                    this.lang = this.en; //en
+                }
+            },
+            goToEn:function goToEn() {
+                this.lang = this.en; //en
+            },
+            goToTr:function goToTr() {
+                this.lang = this.tr; //en
+            }
+
+        },
+        created: function () {
+            // `this` points to the vm instance
+            this.getLang()
+        }
+
+    })
+</script>
