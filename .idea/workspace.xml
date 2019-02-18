@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="21f4cbc8-04dc-45c7-981c-01e558ebe2f7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/tas-kagit-makas/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tas-kagit-makas/paper.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tas-kagit-makas/rock.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tas-kagit-makas/scissors.png" beforeDir="false" />
-    </list>
+    <list default="true" id="21f4cbc8-04dc-45c7-981c-01e558ebe2f7" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -133,25 +128,24 @@
       <updated>1549628462782</updated>
       <workItem from="1549628464079" duration="9465000" />
       <workItem from="1550253932767" duration="8152000" />
-      <workItem from="1550397717016" duration="34022000" />
+      <workItem from="1550397717016" duration="34314000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51639000" />
+    <option name="totallyTimeSpent" value="51931000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15773809" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15773809" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32838285" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32838285" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
