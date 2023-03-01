@@ -12,96 +12,99 @@
 </head>
 <body>
 <div id="app">
-<nav class="navbar navbar-expand-lg navbar-light">
-    <div class="container">
-    <a class="navbar-brand" href="#">Ali Bulut</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav" >
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#"  @click="goToTr()" >Tr <span class="sr-only">(current)</span><img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/1200px-Flag_of_Turkey.svg.png"></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#" @click="goToEn()">En <span class="sr-only">(current)</span><img class="flag" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1280px-Flag_of_the_United_Kingdom.svg.png"></a>
-            </li>
-        </ul>
-    </div>
-    </div>
-</nav>
-
-<div class="container">
-   <div class="row middle">
-       <div class="col-md-3 "></div>
-       <div class="col-md-3 col-6">
-            <img src="https://i.hizliresim.com/JV9GDn.jpg" class="rounded-circle profile-img" alt="Cinque Terre">
-       </div>
-       <div class="col-md-6 col-6">
-           <h4> {{lang.hi}}</h4>
-           <p>Junior Frontend Developer</p>  {{lang.myInfo}}
-        <!--  <br> <i>{{lang.myInfo1}}</i> -->
-
-       </div>
-   </div>
-    <div  class="row">
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
-            <p> {{lang.project}}</p>
-            <ul>
-                 <li>
-                    <a href="https://play.google.com/store/apps/details?id=com.budget.plus" target="_blank">Budget Plus </a> {{lang.budgetPlus}}
-                </li>
-                <li>
-                    <a href="https://play.google.com/store/apps/details?id=com.swipelearn.swipeLearn&hl=en" target="_blank">Swipe Learn </a> {{lang.swipeLearn}}
-                </li>
-                <li>
-                    <a href="https://github.com/ali27001/ticketmaster" target="_blank">TicketMaster </a> {{lang.ticketmaster}}
-                </li>
-                <li>
-                    <a href="https://ali27001.github.io/tas-kagit-makas/#" target="_blank">Taş Kağıt Makas </a> {{lang.tas}}
-                </li>
-                <li>
-                    <a href="https://github.com/ali27001/Tic-Tac-Toe" target="_blank">Tic Tac Toe </a> {{lang.tictactoe}}
-                </li>
-                <li>
-                    <a href="http://derinkod.com/" target="_blank">Derin Kod</a> {{lang.derinkod}}
-                </li>
-                <li>
-                    <a href="https://github.com/ali27001/Avenue-Fashion-Website" target="_blank">Avenue Fashion</a> {{lang.avenue}}
-                </li>
-                <li>
-                    <a href="https://play.google.com/store/apps/details?id=com.empati.psikiyatrist" target="_blank">Psikiyatrist Mobil Hibrit Uygulama</a> {{lang.psikiyatrist}}
-                </li>
-                <li>
-                    <a href="http://imomomega.com/" target="_blank">İmomomega Website</a> {{lang.imomomega}}
-                </li>
-                <li>
-                    <a href="http://bulutholding.com/" target="_blank">Bulut Holding Website</a> {{lang.bulutholding}}
-                </li>
-                <li>
-                    <a href="https://play.google.com/store/apps/details?id=com.filmovie.mobile" target="_blank">Filmovie - Film Takip Uygulaması</a> {{lang.filmovie}}
-                </li>
-                <li>
-                    <a href="https://play.google.com/store/apps/details?id=teknolojimuhendisi.tarifler.kek" target="_blank">Yemek Tarifleri Uygulaması</a> {{lang.yemek}}
-                </li>
-                <li>
-                    <a href="https://play.google.com/store/apps/details?id=com.TeknolojiMuhendisi" target="_blank">Renk Oyunu Uygulaması</a> {{lang.renkoyunu}}
-                </li>
-                <li>
-                    <a href="https://github.com/ali27001/mogo-website" target="_blank">Mogo Website </a> {{lang.mogo}}
-                </li>
-                <li>
-                    <a href="https://codepen.io/alibulut/pen/qxbWoY" target="_blank">Güzel Sözler Web Uygulaması </a> {{lang.guzelsozler}}
-                </li>
+            <a class="navbar-brand" href="#">Ali Bulut</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav" >
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"  @click="goToTr()" >Tr <span class="sr-only">(current)</span><img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/1200px-Flag_of_Turkey.svg.png"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" @click="goToEn()">En <span class="sr-only">(current)</span><img class="flag" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1280px-Flag_of_the_United_Kingdom.svg.png"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-            </ul>
+    <div class="container">
+        <div class="row middle">
+            <div class="col-md-3 "></div>
+            <div class="col-md-3 col-6">
+                <img src="https://avatars.githubusercontent.com/u/34340185?v=4" class="rounded-circle profile-img" alt="Cinque Terre">
+            </div>
+            <div class="col-md-6 col-6">
+                <h4> {{lang.hi}}</h4>
+                <p>Junior Frontend Developer</p>  {{lang.myInfo}}
+                <!--  <br> <i>{{lang.myInfo1}}</i> -->
 
+            </div>
+        </div>
+        <div  class="row">
+            <div class="container">
+                <p> {{lang.project}}</p>
+                <ul>
+                    <li>
+                        <a href="https://play.google.com/store/apps/details?id=com.brain_game_3" target="_blank">Brain Game 3 </a> {{lang.brainGame}}
+                    </li>
+                    <li>
+                        <a href="https://play.google.com/store/apps/details?id=com.budget.plus" target="_blank">Budget Plus </a> {{lang.budgetPlus}}
+                    </li>
+                    <li>
+                        <a href="https://play.google.com/store/apps/details?id=com.swipelearn.swipeLearn&hl=en" target="_blank">Swipe Learn </a> {{lang.swipeLearn}}
+                    </li>
+                    <li>
+                        <a href="https://github.com/ali27001/ticketmaster" target="_blank">TicketMaster </a> {{lang.ticketmaster}}
+                    </li>
+                    <li>
+                        <a href="https://ali27001.github.io/tas-kagit-makas/#" target="_blank">Taş Kağıt Makas </a> {{lang.tas}}
+                    </li>
+                    <li>
+                        <a href="https://github.com/ali27001/Tic-Tac-Toe" target="_blank">Tic Tac Toe </a> {{lang.tictactoe}}
+                    </li>
+                    <li>
+                        <a href="http://derinkod.com/" target="_blank">Derin Kod</a> {{lang.derinkod}}
+                    </li>
+                    <li>
+                        <a href="https://github.com/ali27001/Avenue-Fashion-Website" target="_blank">Avenue Fashion</a> {{lang.avenue}}
+                    </li>
+                    <li>
+                        <a href="https://play.google.com/store/apps/details?id=com.empati.psikiyatrist" target="_blank">Psikiyatrist Mobil Hibrit Uygulama</a> {{lang.psikiyatrist}}
+                    </li>
+                    <li>
+                        <a href="http://imomomega.com/" target="_blank">İmomomega Website</a> {{lang.imomomega}}
+                    </li>
+                    <li>
+                        <a href="http://bulutholding.com/" target="_blank">Bulut Holding Website</a> {{lang.bulutholding}}
+                    </li>
+                    <li>
+                        <a href="https://play.google.com/store/apps/details?id=com.filmovie.mobile" target="_blank">Filmovie - Film Takip Uygulaması</a> {{lang.filmovie}}
+                    </li>
+                    <li>
+                        <a href="https://play.google.com/store/apps/details?id=teknolojimuhendisi.tarifler.kek" target="_blank">Yemek Tarifleri Uygulaması</a> {{lang.yemek}}
+                    </li>
+                    <li>
+                        <a href="https://play.google.com/store/apps/details?id=com.TeknolojiMuhendisi" target="_blank">Renk Oyunu Uygulaması</a> {{lang.renkoyunu}}
+                    </li>
+                    <li>
+                        <a href="https://github.com/ali27001/mogo-website" target="_blank">Mogo Website </a> {{lang.mogo}}
+                    </li>
+                    <li>
+                        <a href="https://codepen.io/alibulut/pen/qxbWoY" target="_blank">Güzel Sözler Web Uygulaması </a> {{lang.guzelsozler}}
+                    </li>
+
+                </ul>
+
+            </div>
         </div>
     </div>
-</div>
 </div>
 
 <!-- Optional JavaScript -->
@@ -125,10 +128,10 @@
     .navbar-brand{
         font-weight: bold;
     }
-   .middle{
-       align-items: center;
-       padding-top: 4%;
-   }
+    .middle{
+        align-items: center;
+        padding-top: 4%;
+    }
     .profile-img{
         width: 75%;
     }
@@ -163,7 +166,8 @@
                 'ticketmaster': 'Vue js ticketmaster api ile basit bir proje',
                 'tictactoe': 'Javascript ile Tic Tac Toe oyunu',
                 'swipeLearn':'İngilizce kelime öğrenme uygulaması',
-                'budgetPlus':'Gelir,Gider takip etme, Bütçe yönetime uygulaması'
+                'budgetPlus':'Gelir,Gider takip etme, Bütçe yönetime uygulaması',
+                'brainGame': "Basit zeka,bulama oyunu"
             },
             en: {
                 'hi': 'Hi I\'m Ali',
@@ -184,7 +188,8 @@
                 'ticketmaster': 'A Simple Project with Vue Js Ticket Manager Api',
                 'tictactoe': 'Tic Tac Toe with Javascript game',
                 'swipeLearn':'word learning app',
-                'budgetPlus':'Income, Expense tracking, Budget management application'
+                'budgetPlus':'Income, Expense tracking, Budget management application',
+                'brainGame': "Basic mind, puzzle game"
             },
             lang:[],
         },
@@ -195,11 +200,11 @@
             getLang: function getLang() {
                 var userLang = navigator.language || navigator.userLanguage;
                 if (userLang == "tr"){
-                 //   alert("türkçe")
+                    //   alert("türkçe")
                     this.lang = this.tr; //tr
                 }
                 else {
-                   // alert ("ingilizce")
+                    // alert ("ingilizce")
                     this.lang = this.en; //en
                 }
             },
